@@ -62,15 +62,15 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "FDN_Reverb_artefacts/JuceLibraryCode/Release/Defs.txt"
+  "FDN_Reverb_artefacts/Release/Standalone/FDN Reverb.app/Contents/MacOS"
+  "FDN_Reverb_artefacts/Release/Standalone/FDN Reverb.app/Contents/Info.plist"
+  "FDN_Reverb_artefacts/Release/Standalone/FDN Reverb.app/Contents/Info.plist"
   "FDN_Reverb_artefacts/Release/AU/FDN Reverb.component/Contents/MacOS"
   "FDN_Reverb_artefacts/Release/AU/FDN Reverb.component/Contents/Info.plist"
   "FDN_Reverb_artefacts/Release/AU/FDN Reverb.component/Contents/Info.plist"
   "FDN_Reverb_artefacts/Release/VST3/FDN Reverb.vst3/Contents/MacOS"
   "FDN_Reverb_artefacts/Release/VST3/FDN Reverb.vst3/Contents/Info.plist"
   "FDN_Reverb_artefacts/Release/VST3/FDN Reverb.vst3/Contents/Info.plist"
-  "FDN_Reverb_artefacts/Release/Standalone/FDN Reverb.app/Contents/MacOS"
-  "FDN_Reverb_artefacts/Release/Standalone/FDN Reverb.app/Contents/Info.plist"
-  "FDN_Reverb_artefacts/Release/Standalone/FDN Reverb.app/Contents/Info.plist"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "JUCE/JUCEConfigVersion.cmake"
   "JUCE/JUCEConfig.cmake"

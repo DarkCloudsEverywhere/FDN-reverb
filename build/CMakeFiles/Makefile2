@@ -176,9 +176,9 @@ CMakeFiles/FDN_Reverb.dir/clean:
 # Target rules for target CMakeFiles/FDN_Reverb_All.dir
 
 # All Build rule for target.
+CMakeFiles/FDN_Reverb_All.dir/all: CMakeFiles/FDN_Reverb_Standalone.dir/all
 CMakeFiles/FDN_Reverb_All.dir/all: CMakeFiles/FDN_Reverb_AU.dir/all
 CMakeFiles/FDN_Reverb_All.dir/all: CMakeFiles/FDN_Reverb_VST3.dir/all
-CMakeFiles/FDN_Reverb_All.dir/all: CMakeFiles/FDN_Reverb_Standalone.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FDN_Reverb_All.dir/build.make CMakeFiles/FDN_Reverb_All.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FDN_Reverb_All.dir/build.make CMakeFiles/FDN_Reverb_All.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/Users/kimon/Documents/projects/audio dev/FDN_reverb/build/CMakeFiles" --progress-num= "Built target FDN_Reverb_All"
