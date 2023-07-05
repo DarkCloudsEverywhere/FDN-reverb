@@ -233,7 +233,7 @@ void FDN_Reverb::setStateInformation(const void *data, int sizeInBytes)
 }
 
 //==============================================================================
-// This creates new instances of the plugin...
+// This creates new instances of the plugin....
 juce::AudioProcessor *JUCE_CALLTYPE createPluginFilter()
 {
     return new FDN_Reverb();
