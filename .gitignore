@@ -1,4 +1,5 @@
-/build
-/JUCE
-/.vscode
+build/
+JUCE/
+.vscode/
 .DS_Store
+fdn_reverb.filtergraph
