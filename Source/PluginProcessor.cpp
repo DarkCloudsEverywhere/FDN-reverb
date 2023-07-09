@@ -10,8 +10,8 @@ FDN_Reverb::FDN_Reverb()
 #endif
                          .withOutput("Output", juce::AudioChannelSet::stereo(), true)
 #endif
-                         ),
-      treeState(*this, nullptr, "Parameters", createParameterLayout())
+      )
+
 {
 }
 
@@ -177,17 +177,17 @@ void FDN_Reverb::processBlock(juce::AudioBuffer<float> &buffer,
     // Alternatively, you can process the samples with the channels
     // interleaved by keeping the same state.
 
-    auto mix = treeState.getRawParameterValue("mix");
-    auto allPassGain = treeState.getRawParameterValue("allPassGain");
-    auto n_allPassGain = treeState.getRawParameterValue("n_allPassGain");
+    auto mix = apvts.getRawParameterValue("mix");
+    auto allPassGain = apvts.getRawParameterValue("allPassGain");
+    auto n_allPassGain = apvts.getRawParameterValue("n_allPassGain");
 
-    auto allPassDelay = treeState.getRawParameterValue("allPassDelay");
+    auto allPassDelay = apvts.getRawParameterValue("allPassDelay");
     auto allPassDelay_n = juce::jmap<int>(*allPassDelay, 1, 100, 500, 10000);
 
-    auto n_allPassDelay = treeState.getRawParameterValue("n_allPassDelay");
+    auto n_allPassDelay = apvts.getRawParameterValue("n_allPassDelay");
     auto n_allPassDelay_n = juce::jmap<int>(*n_allPassDelay, 1, 100, 500, 10000);
 
-    auto filterFreqCutoff = treeState.getRawParameterValue("delayLineFilterCutoff");
+    auto filterFreqCutoff = apvts.getRawParameterValue("delayLineFilterCutoff");
 
     juce::dsp::AudioBlock<float> block(buffer);
     mixer.pushDrySamples(block);
