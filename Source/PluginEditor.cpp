@@ -8,7 +8,13 @@ FDN_ReverbEditor::FDN_ReverbEditor(FDN_Reverb &p)
     juce::ignoreUnused(processorRef);
     // Make sure that before the constructor has finished, you've set the
     // editor's size to whatever you need it to be.
-    setSize(400, 300);
+
+    for (auto comp : getComps())
+    {
+        addAndMakeVisible(comp);
+    }
+
+    setSize(600, 400);
 }
 
 FDN_ReverbEditor::~FDN_ReverbEditor()
@@ -30,4 +36,14 @@ void FDN_ReverbEditor::resized()
 {
     // This is generally where you'll want to lay out the positions of any
     // subcomponents in your editor..
+}
+
+std::vector<juce::Component *> FDN_ReverbEditor::getComps()
+{
+    return {
+        &Mix,
+        &Density,
+        &Diffusion,
+        &Size,
+        &FilterCutoff};
 }
