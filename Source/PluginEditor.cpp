@@ -36,6 +36,14 @@ void FDN_ReverbEditor::resized()
 {
     // This is generally where you'll want to lay out the positions of any
     // subcomponents in your editor..
+
+    auto bounds = getLocalBounds();
+
+    Mix.setBounds(bounds.removeFromTop(bounds.getHeight() * 0.2));
+    Density.setBounds(bounds.removeFromTop(bounds.getHeight() * 0.4));
+    Diffusion.setBounds(bounds.removeFromTop(bounds.getHeight() * 0.6));
+    Size.setBounds(bounds.removeFromTop(bounds.getHeight() * 0.8));
+    FilterCutoff.setBounds(bounds.removeFromTop(bounds.getHeight()));
 }
 
 std::vector<juce::Component *> FDN_ReverbEditor::getComps()
