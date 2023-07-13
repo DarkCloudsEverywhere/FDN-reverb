@@ -14,6 +14,9 @@ The algorithm consists of a 6 delay lines in series, feeding into 15 series allp
 ___
 
 To build using CMake, run the following in the repo directory:
-![CMake build from command line](./readme_assets/carbon.png)
+```
+$ cmake -S ./Source -B build
+$ cmake --build build
+```
 
 You can download CMake from [here](https://cmake.org/download/)
